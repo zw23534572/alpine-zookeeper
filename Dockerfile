@@ -1,6 +1,4 @@
 FROM registry.cn-shenzhen.aliyuncs.com/sjroom/alpine-base
 ADD zookeeper-3.4.9 /export/servers/zookeeper-3.4.9
 WORKDIR /export/servers/zookeeper-3.4.9/bin/
-RUN chmod +x /export/servers/zookeeper-3.4.9/bin/start.sh
-
-CMD ["bash", "/export/servers/zookeeper-3.4.9/bin/start.sh"]
+RUN echo "/export/servers/zookeeper-3.4.9/bin/start.sh"  >> /export/servers/start.sh
