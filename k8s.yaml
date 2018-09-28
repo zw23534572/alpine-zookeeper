@@ -1,27 +1,27 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: alpine-zookeeper
+  name: zookeeper
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
-        name: alpine-zookeeper
+        name: zookeeper
     spec:
       containers:
-        - name: alpine-zookeeper
-          image: registry.cn-shenzhen.aliyuncs.com/sjroom/alpine-zookeeper
+        - name: zookeeper
+          image: registry.cn-shenzhen.aliyuncs.com/sjroom/zookeeper
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: alpine-zookeeper
+  name: zookeeper
 spec:
   type: NodePort
   ports:
     - port: 2181
       nodePort: 30004
   selector:
-        name: alpine-zookeeper
+        name: zookeeper
 # https://raw.githubusercontent.com/zw23534572/alpine-zookeeper/master/k8s.yaml
