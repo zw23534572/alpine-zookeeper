@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: zookeeper
-          image: registry.cn-shenzhen.aliyuncs.com/sjroom/zookeeper
+          image: registry.cn-shenzhen.aliyuncs.com/sjroom/alpine-zookeeper
 ---
 apiVersion: v1
 kind: Service
