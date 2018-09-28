@@ -21,7 +21,7 @@ spec:
   type: NodePort
   ports:
     - port: 2181
-      protocol: TCP
       nodePort: 30004
   selector:
-        name: alpine-zookeeper  
+        name: alpine-zookeeper
+# https://raw.githubusercontent.com/zw23534572/alpine-zookeeper/master/k8s.yaml
