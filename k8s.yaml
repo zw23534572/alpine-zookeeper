@@ -20,8 +20,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 80
-      targetPort: 2181
+    - port: 2181
       protocol: TCP
       nodePort: 30004
   selector:
