@@ -21,7 +21,7 @@ spec:
   type: NodePort
   ports:
     - port: 2181
-      nodePort: 30004
+      nodePort: 2181
   selector:
         name: zookeeper
 # https://raw.githubusercontent.com/zw23534572/alpine-zookeeper/master/k8s.yaml
