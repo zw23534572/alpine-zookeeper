@@ -25,3 +25,5 @@ spec:
   selector:
         name: zookeeper
 # https://raw.githubusercontent.com/zw23534572/alpine-zookeeper/master/k8s.yaml
+# --service-node-port-range=1-65535
+# docker run --name zookeeper -p 2181:2181 -d registry.cn-shenzhen.aliyuncs.com/sjroom/alpine-zookeeper
